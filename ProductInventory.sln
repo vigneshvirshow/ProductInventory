@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 - Presentation", "01 - Presentation", "{605AFD56-A4ED-4B4D-8CA1-EAAE5ABE8417}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 - Application", "02 - Application", "{8B4A897E-568E-4E44-AF86-0C3EE8346ED3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductInventoty.UI", "ProductInventoty.UI\ProductInventoty.UI.csproj", "{FCBAED0A-6264-416B-BA90-D0EBADA98A0B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductInventory.API", "ProductInventory.API\ProductInventory.API.csproj", "{1AB43EB9-1285-4E76-90DC-DB74B8C84A75}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FCBAED0A-6264-416B-BA90-D0EBADA98A0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCBAED0A-6264-416B-BA90-D0EBADA98A0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCBAED0A-6264-416B-BA90-D0EBADA98A0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCBAED0A-6264-416B-BA90-D0EBADA98A0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AB43EB9-1285-4E76-90DC-DB74B8C84A75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AB43EB9-1285-4E76-90DC-DB74B8C84A75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AB43EB9-1285-4E76-90DC-DB74B8C84A75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AB43EB9-1285-4E76-90DC-DB74B8C84A75}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FCBAED0A-6264-416B-BA90-D0EBADA98A0B} = {605AFD56-A4ED-4B4D-8CA1-EAAE5ABE8417}
+		{1AB43EB9-1285-4E76-90DC-DB74B8C84A75} = {605AFD56-A4ED-4B4D-8CA1-EAAE5ABE8417}
+	EndGlobalSection
+EndGlobal
