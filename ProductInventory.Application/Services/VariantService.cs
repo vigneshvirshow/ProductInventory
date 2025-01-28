@@ -1,7 +1,7 @@
-﻿using ProductInventory.Application.Dto;
-using ProductInventory.Application.Interfaces;
+﻿using ProductInventory.Application.Interfaces;
 using ProductInventory.Domain.Entities;
 using ProductInventory.Domain.Interfaces;
+using ProductInventory.Infrastructure.Dto;
 
 namespace ProductInventory.Application.Services
 {

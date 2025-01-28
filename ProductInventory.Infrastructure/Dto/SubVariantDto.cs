@@ -1,6 +1,6 @@
 ﻿using ProductInventory.Domain.Entities;
 
-namespace ProductInventory.Application.Dto
+namespace ProductInventory.Infrastructure.Dto
 {
     public class SubVariantDto : SubVariant
     {

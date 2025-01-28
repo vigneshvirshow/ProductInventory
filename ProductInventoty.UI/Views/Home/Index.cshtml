@@ -1,0 +1,104 @@
+﻿@model IEnumerable<ProductInventory.Infrastructure.Dto.ProductDto>
+
+@{
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Products";
+}
+
+<h1>Products</h1>
+
+<p>
+    <button class="btn btn-primary" onclick="location.href='@Url.Action("Create", "Home")'">
+        Create New
+    </button>
+
+</p>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.VariantId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProductCode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProductName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProductImage)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CreatedDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UpdatedDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CreatedUser)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IsFavourite)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Active)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HSNCode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TotalStock)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VariantId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProductCode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProductName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProductImage)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CreatedDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UpdatedDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CreatedUser)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IsFavourite)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Active)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HSNCode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotalStock)
+            </td>
+            <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

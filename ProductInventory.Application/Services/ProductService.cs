@@ -1,7 +1,7 @@
-﻿using ProductInventory.Application.Dto;
-using ProductInventory.Application.Interfaces;
+﻿using ProductInventory.Application.Interfaces;
 using ProductInventory.Domain.Entities;
 using ProductInventory.Domain.Interfaces;
+using ProductInventory.Infrastructure.Dto;
 
 namespace ProductInventory.Application.Services
 {
@@ -24,7 +24,21 @@ namespace ProductInventory.Application.Services
 
         public bool UpdateProduct(ProductDto product)
         {
-            return productRepository.UpdateProduct(product);
+            return productRepository.UpdateProduct(new Product
+            {
+                Active = product.Active,
+                CreatedDate = product.CreatedDate,
+                CreatedUser = product.CreatedUser,
+                HSNCode = product.HSNCode,
+                Id = product.Id,
+                IsFavourite = product.IsFavourite,
+                ProductCode = product.ProductCode,
+                ProductImage = product.ProductImage,
+                ProductName = product.ProductName,
+                TotalStock = product.TotalStock,
+                UpdatedDate = product.UpdatedDate,
+                User = product.User,
+            });
         }
 
 

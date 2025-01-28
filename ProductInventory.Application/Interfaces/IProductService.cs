@@ -1,4 +1,4 @@
-﻿using ProductInventory.Application.Dto;
+﻿using ProductInventory.Infrastructure.Dto;
 
 namespace ProductInventory.Application.Interfaces
 {

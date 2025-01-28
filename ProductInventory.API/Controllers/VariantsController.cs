@@ -1,8 +1,6 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using ProductInventory.Application.Dto;
+﻿using Microsoft.AspNetCore.Mvc;
 using ProductInventory.Application.Interfaces;
-using ProductInventory.Application.Services;
+using ProductInventory.Infrastructure.Dto;
 
 namespace ProductInventory.API.Controllers
 {

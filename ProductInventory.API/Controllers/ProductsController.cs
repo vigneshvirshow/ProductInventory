@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
-using ProductInventory.Application.Dto;
 using ProductInventory.Application.Interfaces;
+using ProductInventory.Infrastructure.Dto;
 
 namespace ProductInventory.API.Controllers
 {
