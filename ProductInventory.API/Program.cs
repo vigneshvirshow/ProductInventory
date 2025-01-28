@@ -1,4 +1,6 @@
-
+using ProductInventory.Application;
+using ProductInventory.Domain;
+using ProductInventory.Infrastructure;
 namespace ProductInventory.API
 {
     public class Program
@@ -14,7 +16,13 @@ namespace ProductInventory.API
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
+            builder.Services.AddApplicationDependencies();
+            builder.Services.AddDomainDependencies();
+
+
             var app = builder.Build();
+
+            app.UseMiddleware<GlobalExceptionHandler>();
 
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
